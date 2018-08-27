@@ -1,0 +1,11 @@
+/* pages/shoppingCart/confirmAnOrder/confirm an order.wxss */
+@import '/pages/my/orderDetail/orderDetail.wxss';
+.address-info{
+  width:calc(100% - 56rpx);
+}
+.scroll-box{
+ height:calc(100% - 44px);
+}
+.btn-groups{
+  padding: 0;
+}

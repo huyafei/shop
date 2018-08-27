@@ -1,0 +1,12 @@
+/* pages/index/merchant_store_detail/merchant_store_detail.wxss */
+@import '/pages/index/merchant_store/merchant_store.wxss';
+.cell-list-container .cell-item image{
+  width: 34rpx;
+  height: 34rpx;
+  vertical-align: middle;
+}
+.cell-list-container .cell-item-dis image{
+  width: 42rpx;
+  height: 42rpx;
+  vertical-align: middle;
+}

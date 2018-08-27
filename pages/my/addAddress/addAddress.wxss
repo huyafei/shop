@@ -1,0 +1,4 @@
+/* pages/my/addAddress/addAddress.wxss */
+page{
+  height: 100%;
+}

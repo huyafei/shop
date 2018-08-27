@@ -1,0 +1,11 @@
+/* pages/my/ leaseOrder/ leaseOrder.wxss */
+@import "/pages/index/product/product.wxss";
+page{
+  height: 100%;
+}
+.leaseOrder-container{
+ justify-content: space-between
+}
+.leaseOrder-list-container{
+ height: calc(100% - 104rpx)
+}

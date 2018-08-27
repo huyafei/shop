@@ -1,0 +1,19 @@
+/* pages/shoppingCart/selectAddress/selectAddress.wxss */
+@import "/component/van-ui/common/index.wxss";
+page{
+  height: 100%;
+}
+.address-content{
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20rpx 30rpx;
+}
+.address-content .defPitch{
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.address-detail{
+  width: calc(100% - 56px);
+  padding: 0 30rpx;
+}

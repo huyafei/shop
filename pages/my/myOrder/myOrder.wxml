@@ -1,0 +1,54 @@
+<!--pages/my/myOrder/myOrder.wxml-->
+<view class='container flex-c leaseOrder-container'>
+  <i-tabs current="{{ current }}" color="#f759ab" bindchange="handleChange">
+    <i-tab key="tab1" title="全部"></i-tab>
+    <i-tab key="tab2" title="待支付"></i-tab>
+    <i-tab key="tab3" title="待发货"></i-tab>
+    <i-tab key="tab4" title="待收货"></i-tab>
+    <i-tab key="tab5" title="已完成"></i-tab>
+    
+  </i-tabs>
+  <view class='leaseOrder-list-container'>
+     <scroll-view scroll-y class="scroll-box" bindscrolltolower="getProductPage">  
+      <view class='item-store-product-content bg-color-f' wx:for='{{5}}'>
+        <view class='store-name flex-r '>
+          <view class='selectImg flex-r'>
+            <image wx:if="{{selectAll}}" src='/imgs/selectIcon_03.png'></image>
+            <image wx:eles src='/imgs/selectIcon_06.png'></image>
+            <text>店铺名称</text>
+          </view>
+          <text class='color-r'>待支付</text>
+        </view>
+        <view class='item-product-content flex-r van-hairline--top'  wx:for='{{2}}'>
+          <view class='selectImg'>
+            <image wx:if="{{selectAll}}" src='/imgs/selectIcon_03.png'></image>
+            <image wx:eles src='/imgs/selectIcon_06.png'></image>
+          </view>
+          <view class='shop-info flex-r'>
+            <image src='/imgs/productImg_03.png'></image>
+            <view class='product-info flex-c box-sizing'>
+              <view class='product-name flex-r'>
+                <text class='product-title'>仿真花</text>
+              </view>
+              <view class='as-bnt flex-r'>
+                <view class='flex-c'>
+                  <text>租金：200元</text>
+                  <text>押金：200元</text>
+                </view>
+                <text>x1</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='order-state flex-r van-hairline--top'>
+          <view class='color-9'>自提时间：<text>2018-12-23</text></view>
+          <view class='bnts flex-r'>
+            <van-button size="small" type="danger" class='btn' plain>取消订单</van-button>
+            <!-- <van-button size="small" type="danger" plain>删除订单</van-button> -->
+            <van-button size="small" type="danger" class='btn' plain>确认收货</van-button>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

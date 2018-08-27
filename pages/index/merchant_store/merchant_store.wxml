@@ -1,0 +1,49 @@
+<!--pages/index/merchant_store/merchant_store.wxml-->
+<view class='store=info container flex-c'>
+  <view class='store-title-container flex-r' data-pageUrl='/pages/index/merchant_store_detail/merchant_store_detail' bindtap='jumpPage'>
+    <view class='store-title-lf flex-r'>
+      <image src='/imgs/storeImg.png'></image>
+      <view class='store-introduce flex-c'>
+        <view class='store-name'>
+          <text>罗马婚庆（无锡鸿桥点）</text>
+          <view>
+            <text>起租价200元</text>
+            <span>|</span>
+            <text>月租量</text>
+          </view>
+        </view>
+        <text class='store-notice fz-12'>公告：如果你无法简洁的表达你的想法，那只说明你还不够了解它。</text>
+      </view>
+    </view>
+    <i-icon type="enter" size='16'/>
+  </view>
+  <view class='tabs'>
+    <i-tabs current="{{ current_scroll }}" i-class="tabs-content" color="#FF567A" scroll bindchange="handleChangeScroll">
+      <i-tab key="tab1" title="选项1"></i-tab>
+      <i-tab key="tab2" title="选项2"></i-tab>
+      <i-tab key="tab3" title="选项3"></i-tab>
+      <i-tab key="tab4" title="选项4"></i-tab>
+      <i-tab key="tab5" title="选项5"></i-tab>
+      <i-tab key="tab6" title="选项6"></i-tab>
+      <i-tab key="tab7" title="选项7"></i-tab>
+      <i-tab key="tab8" title="选项8"></i-tab>
+      <i-tab key="tab9" title="选项9"></i-tab>
+    </i-tabs>
+  </view>
+  <view class='second-type'>
+    <scroll-view class='scroll-box' scroll-y>
+      <view class='item-secondType-content' data-pageUrl='/pages/index/product/product'  bindtap="jumpPage">
+        <image src='/imgs/secondImg_03.png'></image>
+      </view>
+      <view class='item-secondType-content'>
+        <image src='/imgs/secondImg_03.png'></image>
+      </view>
+      <view class='item-secondType-content'>
+        <image src='/imgs/secondImg_03.png'></image>
+      </view>
+      <view class='item-secondType-content'>
+        <image src='/imgs/secondImg_03.png'></image>
+      </view>
+    </scroll-view>
+  </view>
+</view>

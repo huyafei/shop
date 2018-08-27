@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "商品清单",
+  "usingComponents": {
+    "i-button": "/component/button/index",
+    "van-button": "/component/van-ui/button/index"
+  }
+}

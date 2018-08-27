@@ -1,0 +1,29 @@
+<!--pages/my/address/address.wxml-->
+<view class='container'>
+  <view wx:if='{{!showNoAddressPage}}' class='addressList-content'>
+    
+      <i-swipeout  i-class="" operateWidth="{{120}}">
+        <view slot="content">
+          <view class="i-swipeout-des">
+            <view class="i-swipeout-des-h2">第七个小矮人</view>
+            <view class="i-swipeout-des-detail color-9">乐观善良的7个小矮人原本过着简单快乐的生活，不料诅咒公主的巫婆</view>
+          </view>
+          </view>
+          <view slot="button" class="oper-btn i-swipeout-demo-button-group flex-r">
+            <i-icon type="editor" size='32'/>
+            <i-icon type="delete_fill" size='32' />
+          </view>
+        </i-swipeout>
+        <view class='ea-btn'>
+          <i-button bind:click="handleClick" type="ghost" shape="circle"  data-pageUrl='/pages/my/addAddress/addAddress'  bindtap="jumpPage">新增地址</i-button>
+          <!-- <text>新增地址</text> -->
+        </view>
+  </view>
+  <view wx:if='{{showNoAddressPage}}' class='noAddress flex-c' style="background-image: url('/imgs/noAddressBg_02.png');background-size:100% 100%;">
+    <i-button 
+      i-class='btn' 
+      bind:click="handleClick" 
+      shape="circle" 
+      size="small" wodth='100rpx' data-pageUrl='/pages/my/addAddress/addAddress'  bindtap="jumpPage">新增地址</i-button>
+  </view>
+</view>

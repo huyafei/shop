@@ -1,0 +1,30 @@
+<!--pages/index/product/product.wxml-->
+<view class='container product-list-container flex-c'>
+  <view class='search flex-r'>
+    <view class="search-container">
+      <view class='search-content flex-r'>
+        <i-icon type="search" size='16' class='icon-search'/>
+        <input  bindinput="bindKeyInput" placeholder="请输入搜索内容"/>
+      </view>
+    </view>
+  </view>
+  <!-- 商品列表 -->
+  <view class='product-list-content'>
+    <scroll-view scroll-y class="scroll-box" bindscrolltolower="getProductPage">  
+      <view wx:for="{{10}}" class='item-product-info flex-r box-sizing' data-pageUrl='/pages/index/productDetail/productDetail'  bindtap="jumpPage">
+        <image src="/imgs/productImg_03.png"></image>
+        <view class='product-detail-info flex-c box-sizing'>
+          <view class='product-info-t flex-c'>
+            <text class='product-title'>红豆仿真花</text>
+            <text class='fz-12 desc'>文字描述：如果你无法....</text>
+            <view class='fz-12 measure color-9'>
+              <text class='cashPledge mg-rt'>押金：200元</text>
+              <text>月租量：2014单</text>
+            </view>
+          </view>
+          <text class="rentMoney color-r">租金：200元</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

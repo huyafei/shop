@@ -1,0 +1,26 @@
+<!--pages/index/city/city.wxml-->
+<view class='container'>
+  <i-panel title="当前城市">
+    <i-row i-class='row-content'>
+        <i-col span="8" i-class="item-city-col">
+          <text>无锡</text>
+        </i-col>
+    </i-row>
+  </i-panel>
+  <i-panel title="已开通城市">
+    <i-row i-class="row-content">
+        <i-col span="8" i-class="item-city-col">
+          <text>无锡</text>
+        </i-col>
+        <i-col span="8" i-class="item-city-col">
+            <text>无锡</text>
+        </i-col>
+        <i-col span="8" i-class="item-city-col">
+            <text>无锡</text>
+        </i-col>
+        <i-col span="8" i-class="item-city-col">
+            <text>无锡</text>
+        </i-col>
+    </i-row>
+  </i-panel>
+</view>

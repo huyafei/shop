@@ -1,0 +1,5 @@
+/* pages/index/propsRental/propsRental.wxss */
+@import '/pages/index/merchant_store/merchant_store.wxss';
+.second-type{
+  height: calc(100% - 42px);
+}

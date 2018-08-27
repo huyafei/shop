@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "商品详情",
+  "usingComponents": {
+    "i-button": "/component/button/index",
+    "i-row": "/component/row/index",
+    "i-col": "/component/col/index",
+    "i-cell-group": "/component/cell-group/index",
+    "i-cell": "/component/cell/index",
+    "i-action-sheet": "/component/action-sheet/index",
+    "i-panel": "/component/panel/index",
+    "i-input-number": "/component/input-number/index"
+  }
+}

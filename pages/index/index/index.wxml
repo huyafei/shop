@@ -1,0 +1,96 @@
+<!--index.wxml-->
+<view class='container'>
+  <scroll-view scroll-y class='scroll-box'>
+    <!-- 1.搜索 -->
+  <view class='search flex-r'>
+    <view class='address-name' data-pageUrl='/pages/index/city/city'  bindtap="jumpPage">
+      <text class='fz-12'>{{address}}</text>
+      <i-icon type="unfold"  color="#80848f" />
+    </view>
+    <view class="search-container">
+      <view class='search-content flex-r'>
+        <i-icon type="search" size='16' class='icon-search'/>
+        <input  bindinput="bindKeyInput" placeholder="请输入搜索内容"/>
+      </view>
+    </view>
+  </view>
+  <!-- banner -->
+  <view class='swiper-container'>
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"  indicator-color="#fff" indicator-active-color="#EFB550">
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 2.业务 -->
+   <view class='common-bus'>
+    <view  class='common-item' data-url="/pages/myInfo/myIntegral/myIntegral" bindtap=''>
+      <view>
+        <image src="/imgs/business/ic_home_wedding@2x.png"></image>
+      </view>
+      <text class="bus-name">婚庆资源</text>
+    </view>
+    <!--优惠券  -->
+     <view class='common-item' data-pageUrl="/pages/index/propsRental/propsRental" bindtap='jumpPage'>
+      <view>
+        <image src="/imgs/business/ic_home_rent@2x.png"></image>
+      </view>
+      <text class="bus-name">道具租赁</text>
+    </view>
+    <!-- 主题餐厅 -->
+    <view class='common-item' data-pageUrl="/pages/index/doBusiness/doBusiness" bindtap=''>
+      <view>
+        <image src="/imgs/business/ic_home_discounts@2x.png"></image>
+      </view>
+      <text class="bus-name">主题餐厅</text>
+    </view>
+    <!--其他  -->
+    <view class='common-item' data-url="/pages/myInfo/conversionRecord/conversionRecord" bindtap=''>
+      <view>
+        <image src="/imgs/business/ic_home_others@2x.png"></image>
+      </view>
+      <text class="bus-name">其他</text>
+    </view>
+  </view>
+   <!--3.附近门店  -->
+   <view class='nearby-store'>
+    <view class='bus-title'>
+      <view class='bus-title-lf'>
+        <image src='/imgs/ic_home_rectangle@2x.png'></image>
+        <text>附近商家</text>
+      </view>
+      <!-- <text class='bus-title-rt'> -->
+        <i-icon type="enter"  data-pageUrl='/pages/index/merchant/merchant'  bindtap="jumpPage"/>
+      <!-- </text> -->
+    </view>
+    <view class='store-container'>
+      <view class='item-store-content flex-c' data-pageUrl='/pages/index/product/product'  bindtap="jumpPage">
+        <image src='/imgs/01_03.png'></image>
+        <view class='item-store-content-t'>
+          <view class='store-data flex-r'>
+            <view class='origin-price'>
+              <text>起租价：</text>
+              <text class='price'>200元</text>
+            </view>
+            <view class='rent-quantity'>
+              <text>月租量：</text>
+              <text class='quantity'>1024</text>
+            </view>
+          </view>
+          <view class='address flex-r'>
+              <i-icon type="coordinates" size='20'/>
+            <text>无锡建苑大厦</text>
+          </view>
+        </view>
+        
+      </view>
+    </view>
+   </view>
+  </scroll-view>
+
+  
+    
+</view>

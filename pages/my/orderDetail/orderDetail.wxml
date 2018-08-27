@@ -1,0 +1,42 @@
+<!--pages/my/orderDetail/orderDetail.wxml-->
+<view class='container flex-c'>
+  <scroll-view scroll-y class='scroll-box'>
+    <view class='address flex-r bg-color-f'>
+      <i-icon type="coordinates" size='28'/>
+      <view class='address-info flex-c'>
+        <text>李思思 15061509527</text>
+        <text class='color-9'>江苏省无锡是滨湖区</text>
+      </view>
+    </view>
+    <i-cell-group i-class='mg-t-20'>
+      <i-cell title="商家名称">
+        <i-icon slot='icon' type="homepage" size='24'/>
+        <text slot="footer" class='color-r'>待付款</text>
+      </i-cell>
+    <i-cell title="商品清单" is-link url='/pages/my/productInventory/productInventory'></i-cell>
+    <view>
+      <i-tabs scroll i-class='productImg-list' bindchange="handleChangeScroll">
+        <image wx:for='{{10}}' src='/imgs/productImg_03.png'></image>
+      </i-tabs>
+    </view>
+    <i-cell title="客服电话" value='15061509527' i-class='mg-tb-20'></i-cell>
+    <i-cell title="租金合计" >
+      <text slot="footer" class='color-r'>¥1314</text>
+    </i-cell>
+    <i-cell title="押金合计" >
+      <text slot="footer" class='color-r'>¥1314</text>
+    </i-cell>
+    <i-cell title="支付合计" >
+      <text slot="footer" class='color-r'>¥1314</text>
+    </i-cell>
+    <i-cell title="实付金额">
+        <text slot="footer" class='color-r'>¥1314</text>
+    </i-cell>
+    </i-cell-group>
+  </scroll-view>
+  <view class='btn-groups bg-color-f'>
+    <van-button type="default" class='btn'  plain>取消订单</van-button>
+    <van-button type="default" class='btn' plain>支付订单</van-button>
+    <van-button type="default" class='btn' plain>确认收货</van-button>
+  </view>
+</view>

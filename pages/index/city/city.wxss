@@ -1,0 +1,18 @@
+/* pages/index/city/city.wxss */
+page{
+  height: 100%;
+}
+.row-content{
+  background: #f4f4f4;
+}
+.row-content .item-city-col{
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+}
+.row-content .item-city-col text{
+  display: inline-block;
+  width: 100%;
+  text-align: center;background: #fff;
+  height: 60rpx;
+  line-height: 60rpx;
+}

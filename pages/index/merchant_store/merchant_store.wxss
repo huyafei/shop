@@ -1,0 +1,52 @@
+/* pages/index/merchant_store/merchant_store.wxss */
+page{
+  height: 100%;
+}
+.store-title-container{
+  justify-content: space-between;
+  align-items: center;
+  height: 264rpx;
+  color: #fff;
+  background-color:#373739;
+  padding: 0 30rpx;
+}
+.store-title-lf image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 20rpx;
+}
+.store-title-lf .store-introduce{
+  justify-content: space-around;
+  width: calc(100% - 160rpx);
+  height: 160rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.store-title-lf .store-name>view>span{
+  margin: 0 10rpx;
+}
+.store-title-lf .store-notice{
+  color:#ddd ;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+/* tabs */
+.tabs{
+  background: #fff
+}
+.second-type{
+  height: calc(100% - 348rpx);
+}
+.item-secondType-content{
+  padding: 20rpx 30rpx 0 30rpx;
+ 
+}
+.item-secondType-content image{
+  width: 100%;
+  height: 350rpx;
+}

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "订单详情",
+  "usingComponents": {
+    "i-icon": "/component/icon/index",
+    "i-cell-group": "/component/cell-group/index",
+    "i-cell": "/component/cell/index",
+    "i-tabs": "/component/tabs/index",
+    "i-tab": "/component/tab/index",
+    "van-button": "/component/van-ui/button/index"
+  }
+}

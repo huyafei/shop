@@ -1,0 +1,18 @@
+/* pages/index/merchant/merchant.wxss */
+@import "../index/index.wxss";
+page{
+  height: 100%;
+}
+.nearbyStore-coantainer .tabs .tabs-row .tabs-col{
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fff;
+}
+.nearbyStore-coantainer .tabs text.active{
+  font-weight: bold;
+  color: #ff567a;
+}
+.storeList-caontainer{
+  height: calc(100% - 80rpx);
+}

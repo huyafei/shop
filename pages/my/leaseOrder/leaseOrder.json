@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "租赁清单",
+  "usingComponents": {
+    "i-tabs": "/component/tabs/index",
+    "i-tab": "/component/tab/index"
+  }
+}

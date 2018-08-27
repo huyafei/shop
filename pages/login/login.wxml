@@ -1,0 +1,17 @@
+<!--pages/login/login.wxml-->
+<view class='login-box'>
+  <view class='login-item flex-r'>
+    <text class='login-item-label'>手机号码</text>
+    <view class='login-item-r'>
+      <input class='login-item-input' bindinput="getPhoneCode" name="uerPhoneCode" confirm-type="完成" placeholder='请输入手机号码'></input>
+    </view>  
+  </view>
+  <view class='login-item flex-r'>
+    <text class='login-item-label'>验证码</text>
+    <view class='flex-r login-item-r'>
+      <input class='login-item-input' bindinput="getVerificationCode"  name="verificationCode" confirm-type="完成" placeholder='请输入验证码'></input>
+      <button  size='mini' class='login-item-btn' disabled="{{disBtn}}" bindtap='sendCode'>{{btnText}}</button>
+    </view>
+  </view>
+  <button class='phoneLogin'	open-type="getUserInfo"  lang="zh_CN" bindgetuserinfo="onGotUserInfo">授权登录</button>
+</view>

@@ -1,0 +1,40 @@
+/* pages/my/address/address.wxss */
+page,.addressList-content,.noAddress{
+  height: 100%;
+}
+.noAddress{
+  justify-content: center;
+  align-items: center;
+}
+.noAddress .btn{
+  width: 240rpx;
+  margin-bottom:-30rpx; 
+}
+.addressList-content .i-swipeout-item {
+  padding: 0
+}
+.addressList-content .oper-btn {
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  background: #ff567a;
+  color: #fff;
+}
+.i-swipeout-des{
+  padding:20rpx 30rpx;
+}
+.i-swipeout-des-detail{
+   overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+/* .ea-btn>text{
+  display: block;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid #ff567a;
+  background: #fff;
+  color: #ff567a;
+  border-radius:22px;
+  text-align: center; 
+}  */

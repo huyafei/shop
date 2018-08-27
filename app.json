@@ -1,0 +1,58 @@
+{
+  "pages": [
+     
+    "pages/index/index/index",
+    "pages/index/city/city",
+    "pages/index/propsRental/propsRental",
+    "pages/index/merchant/merchant",
+    "pages/index/merchant_store/merchant_store",
+    "pages/index/merchant_store_detail/merchant_store_detail",
+    "pages/index/clause/clause",
+    "pages/index/product/product",
+    "pages/index/productDetail/productDetail",
+    "pages/my/index/index",
+    "pages/my/address/address",
+    "pages/my/addAddress/addAddress",
+    "pages/my/leaseOrder/leaseOrder",
+    "pages/my/myOrder/myOrder",
+    "pages/my/orderDetail/orderDetail",
+    "pages/my/productInventory/productInventory",
+    "pages/shoppingCart/index/index",
+    "pages/shoppingCart/selectAddress/selectAddress",
+    "pages/shoppingCart/productInventory/productInventory",
+    "pages/shoppingCart/confirmAnOrder/confirmAnOrder",
+    "pages/shoppingCart/submitOrder/submitOrder",
+    "pages/login/login"
+  
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "浩海仓储",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index/index",
+        "iconPath": "imgs/tabbar/tabbar_home_n@3x.png",
+        "selectedIconPath": "imgs/tabbar/tabber_home_p@3x.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shoppingCart/index/index",
+        "iconPath": "imgs/tabbar/ic_shopping_n@3x.png",
+        "selectedIconPath": "imgs/tabbar/tabbar_shopping_p@3x.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/index/index",
+        "iconPath": "imgs/tabbar/ic_mine_n@3x.png",
+        "selectedIconPath": "imgs/tabbar/tabbar_mine_p@3x.png",
+        "text": "我的"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "selectedColor": "#ff567a"
+  }
+}

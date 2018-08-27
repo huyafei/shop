@@ -1,0 +1,13 @@
+<!--pages/shoppingCart/selectAddress/selectAddress.wxml-->
+<view class='container'>
+  <view class='address-content bg-color-f flex-r van-hairline--bottom' wx:for='{{3}}' data-id='1' catchtap='selectAddress'>
+    <view class='defPitch'>
+      <i-icon type="coordinates" size="28" color="#80848f" />
+    </view>
+    <view class='address-detail flex-c box-sizing'>
+      <text>姓名  15061509527</text>
+      <text class='color-9'>无锡市滨湖区延迟</text>
+    </view>
+    <i-icon type="editor" size="28" color="#80848f"  catchtap='jumpPage'/>
+  </view>
+</view>

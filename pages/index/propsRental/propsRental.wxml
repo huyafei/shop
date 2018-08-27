@@ -1,0 +1,34 @@
+<!--pages/index/propsRental/propsRental.wxml-->
+<view class='store=info container flex-c'>
+  <view class='tabs'>
+    <i-tabs current="{{ current_scroll }}" i-class="tabs-content" color="#FF567A" scroll bindchange="handleChangeScroll">
+      <i-tab key="tab1" title="选项1"></i-tab>
+      <i-tab key="tab2" title="选项2"></i-tab>
+      <i-tab key="tab3" title="选项3"></i-tab>
+      <i-tab key="tab4" title="选项4"></i-tab>
+      <i-tab key="tab5" title="选项5"></i-tab>
+      <i-tab key="tab6" title="选项6"></i-tab>
+      <i-tab key="tab7" title="选项7"></i-tab>
+      <i-tab key="tab8" title="选项8"></i-tab>
+      <i-tab key="tab9" title="选项9"></i-tab>
+    </i-tabs>
+  </view>
+  <view class='second-type'>
+    <scroll-view class='scroll-box' scroll-y>
+      <view class='item-secondType-content' data-pageUrl='/pages/index/product/product'  bindtap="jumpPage">
+        <image src='/imgs/secondImg_03.png'></image>
+      </view>
+      <view class='item-secondType-content'>
+        <image src='/imgs/secondImg_03.png'></image>
+      </view>
+      <view class='item-secondType-content'>
+        <image src='/imgs/secondImg_03.png'></image>
+      </view>
+      <view class='item-secondType-content'>
+        <image src='/imgs/secondImg_03.png'></image>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+

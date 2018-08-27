@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "选择地址",
+  "usingComponents": {
+    "i-icon": "/component/icon/index"
+  }
+}

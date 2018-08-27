@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "商品列表",
+    "usingComponents": {
+      "i-icon": "/component/icon/index"
+    
+    }
+}

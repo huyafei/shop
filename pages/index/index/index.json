@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-search": "/component/van-ui/search/index",
+    "i-icon": "/component/icon/index"
+  }
+}

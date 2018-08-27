@@ -1,0 +1,54 @@
+<!--pages/shoppingCart/index/index.wxml-->
+<view class='container flex-c shoppingCart-container'>
+  <view class='product-list'>
+    <scroll-view class='scroll-box' scroll-y>
+      
+      <view class='item-store-product-content bg-color-f' wx:for='{{5}}'>
+        <view class='store-name flex-r '>
+          <view class='selectImg flex-r'>
+            <image wx:if="{{selectAll}}" src='/imgs/selectIcon_03.png'></image>
+            <image wx:eles src='/imgs/selectIcon_06.png'></image>
+            <text>店铺名称</text>
+          </view>
+          <i-icon type="enter" size='20'/>
+        </view>
+        <view class='item-product-content flex-r van-hairline--top'  wx:for='{{2}}'>
+          <view class='selectImg'>
+            <image wx:if="{{selectAll}}" src='/imgs/selectIcon_03.png'></image>
+            <image wx:eles src='/imgs/selectIcon_06.png'></image>
+          </view>
+          <view class='shop-info flex-r'>
+            <image src='/imgs/productImg_03.png'></image>
+            <view class='product-info flex-c box-sizing'>
+              <view class='product-name flex-r'>
+                <text class='product-title'>仿真花</text>
+                <text class='color-9'>删除</text>
+              </view>
+              <view class='as-bnt flex-r'>
+                <view class='flex-c'>
+                  <text>租金：200元</text>
+                  <text>押金：200元</text>
+                </view>
+                 <i-input-number i-class='input-number' size='small' value="{{ value1 }}" min="1" max="100" bindchange="handleChange1" />
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='selectAll-container flex-r bg-color-f'>
+    <view class='content-lf flex-r'>
+      <view class='selectAll-btn flex-r'>
+        <image wx:if="{{selectAll}}" src='/imgs/selectIcon_03.png'></image>
+        <image wx:eles src='/imgs/selectIcon_06.png'></image>
+        <text>全选</text> 
+      </view>
+     
+       <view>
+      合计：<text class='color-r'>¥1314</text>  
+      </view>
+    </view>
+    <text class='content-rt-btn bg-color-3'bindtap='jumpPage'>去结算</text>
+  </view>
+</view>

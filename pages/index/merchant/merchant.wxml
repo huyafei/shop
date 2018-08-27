@@ -1,0 +1,35 @@
+<!--pages/index/merchant/merchant.wxml-->
+<view class='container nearbyStore-coantainer'>
+  <view class='tabs'>
+    <i-row i-class="tabs-row">
+      <i-col span="12" i-class="tabs-col" wx:for="{{sortList}}" wx:key="index" data-index="{{index}}" bindtap='selectType'>
+          <text class='{{showIndex===index?"active":""}}'>{{item.name}}</text>
+      </i-col>
+    </i-row>
+  </view>
+  <view class='storeList-caontainer'>
+    <scroll-view class='scroll-box' scroll-y bindscrolltolower='changeScroll'>
+      <view class='item-store-content flex-c'  data-pageUrl='/pages/index/merchant_store/merchant_store'  bindtap="jumpPage">
+        <image src='/imgs/01_03.png'></image>
+        <view class='item-store-content-t'>
+          <view class='store-data flex-r'>
+            <view class='origin-price'>
+              <text>起租价：</text>
+              <text class='price'>200元</text>
+            </view>
+            <view class='rent-quantity'>
+              <text>月租量：</text>
+              <text class='quantity'>1024</text>
+            </view>
+          </view>
+          <view class='address flex-r'>
+              <i-icon type="coordinates" size='20'/>
+            <text>无锡建苑大厦</text>
+          </view>
+        </view>
+        
+      </view>
+    
+    </scroll-view>
+  </view>
+</view>

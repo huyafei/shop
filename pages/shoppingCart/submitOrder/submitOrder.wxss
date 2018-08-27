@@ -1,0 +1,2 @@
+/* pages/shoppingCart/submitOrder/submitOrder.wxss */
+@import '/pages/shoppingCart/confirmAnOrder/confirmAnOrder.wxss'

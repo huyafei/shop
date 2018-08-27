@@ -1,0 +1,101 @@
+<!--pages/index/productDetail/productDetail.wxml-->
+<view class='container flex-c productDetail-container'>
+  <view class='productDetail-content'>
+    <scroll-view class='scroll-box flex-c' scroll-y>
+      <!-- 轮播 -->
+      <view class='swiper-container'>
+        <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"  indicator-color="#fff" indicator-active-color="#EFB550">
+          <block wx:for="{{imgUrls}}" wx:key="index">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image" width="355" height="150"/>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+      <!--  -->
+      <view class='product-introduction flex-c bg-color-f'>
+        <view class="product-intro-t flex-c">
+          <text class='product-title'>鄢陵仿真花</text>
+          <text class='product-desc fz-12 color-9'>商品描述：描述描述描述描述描述描述</text>
+        </view>
+        <view class='product-deal-data'>
+          <text class='color-r'>租金：200元</text>
+          <view class='product-deal-b flex-r fz-12 color-9'>
+            <text class=''>押金：200元</text>
+            <text>1314人购买</text>
+          </view>
+        </view>
+      </view>
+      <!-- 规格 -->
+      <i-cell-group i-class='mg-tb-20'>
+        <i-cell title="选择规格" value="粉红" is-link></i-cell>
+      </i-cell-group>
+
+      <!--  -->
+      <i-cell-group i-class=''>
+        <i-cell title="所需金额"></i-cell>
+      </i-cell-group>
+      <i-row i-class='bg-color-2'>
+        <i-col span="8" i-class="col-class pd-tb-20 text-align">
+          <view>租金</view>
+          <text class='color-r mg-t-10'>400元</text>
+        </i-col>
+        <i-col span="8" i-class="col-class pd-tb-20 text-align">
+          <view>押金</view>
+          <text class='color-r mg-t-10'>400元</text>
+        </i-col>
+        <i-col span="8" i-class="col-class pd-tb-20 text-align">
+          <view>数量</view>
+          <text class='color-r mg-t-10'>4</text>
+        </i-col>
+      </i-row>
+    </scroll-view>
+  </view>
+  <view class='btns'>
+    <i-row>
+      <i-col span="12" i-class="col-class">
+        <i-button bind:click="jumpPage" type="warning" long="true" data-pageurl="/pages/shoppingCart/index/index">进入购物车</i-button>
+      </i-col>
+      <i-col span="12" i-class="col-class">
+        <i-button bind:click="handleClick" type="error" long="true">加入购物车</i-button>
+      </i-col>
+    </i-row>
+  </view>
+  <!--  -->
+
+<i-action-sheet visible="{{ visible1 }}" show-cancel bind:cancel="handleCancel1"  cancel-text="确定" >
+    <view slot="header" style="padding: 20rpx 0;">
+       <view class='productSku'>
+        <view class='product-info flex-r van-hairline--bottom'>
+          <image src='/imgs/productImg_03.png'></image>
+          <view class='productDetail flex-c'>
+            <text>商品名称</text>
+            <view class='flex-c'>
+              <text class='color-r'>押金：200元</text>
+              <text>租金：200元</text>
+            </view>
+          </view>
+        </view>
+        <i-panel title="颜色分类">
+          <i-row i-class="row-content">
+              <i-col span="4" i-class="item-city-col">
+                <text class='bg-color-3'>无锡</text>
+              </i-col>
+              <i-col span="4" i-class="item-city-col">
+                  <text class='bg-color-3'>无锡</text>
+              </i-col>
+          </i-row>
+        </i-panel>
+        <i-cell-group>
+            <i-cell title="购买数量" >
+              <view slot='footer'>
+                  <i-input-number value="{{ value1 }}" min="1" max="100" bindchange="handleChange1" />
+              </view>
+            </i-cell>
+         
+        </i-cell-group>
+       </view>
+    </view>
+</i-action-sheet>
+</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "购物车",
+  "usingComponents": {
+    "i-icon": "/component/icon/index",
+    "i-input-number": "/component/input-number/index"
+  }
+}

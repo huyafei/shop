@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "附近商家",
+  "usingComponents": {
+    "i-row": "/component/row/index",
+    "i-col": "/component/col/index",
+    "van-search": "/component/van-ui/search/index",
+    "i-icon": "/component/icon/index"
+  }
+}

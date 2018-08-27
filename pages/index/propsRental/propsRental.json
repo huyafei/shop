@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "道具租赁",
+    "usingComponents": {
+      "i-icon": "/component/icon/index",
+      "i-tabs": "/component/tabs/index",
+      "i-tab": "/component/tab/index"
+    }
+}

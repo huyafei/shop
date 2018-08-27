@@ -1,0 +1,37 @@
+<!--pages/index/merchant_store_detail/merchant_store_detail.wxml-->
+<view class='container'>
+  <view class='store-title-container flex-r mg-b-20'>
+    <view class='store-title-lf flex-r'>
+      <image src='/imgs/storeImg.png'></image>
+      <view class='store-introduce flex-c'>
+        <view class='store-name'>
+          <text>罗马婚庆（无锡鸿桥点）</text>
+          <view>
+            <text>起租价200元</text>
+            <span>|</span>
+            <text>月租量</text>
+          </view>
+        </view>
+        <text class='store-notice fz-12'>公告：如果你无法简洁的表达你的想法，那只说明你还不够了解它。</text>
+      </view>
+    </view>
+  </view>
+  <i-cell-group i-class='cell-list-container'>
+    <i-cell title="江苏无锡是" i-class='cell-item mg-b-20'>
+       <i-icon slot='icon' type="coordinates" size="20" />
+       <image slot="footer" src='/imgs/phoneIcon_03.png'></image>
+    </i-cell>
+    <i-cell title="查询租赁条款" is-link i-class='mg-b-20' url="/pages/index/clause/clause">
+       <i-icon  slot='icon' type="document" size="20" />
+    </i-cell>
+    <i-cell i-class='cell-item-dis' title='根据租赁金额，享有等量积分'>
+      <image slot="icon" src='/imgs/disIcon(2).png'></image>
+    </i-cell>
+    <i-cell i-class='cell-item-dis'  title='根据租赁金额，享有等量积分'>
+      <image slot="icon" src='/imgs/disIcon(3).png'></image>
+    </i-cell>
+    <i-cell i-class='cell-item-dis' title='根据租赁金额，享有等量积分'>
+      <image slot="icon" src='/imgs/disIcon(1).png'></image>
+    </i-cell>
+  </i-cell-group>
+</view>

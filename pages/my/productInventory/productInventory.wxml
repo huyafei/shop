@@ -1,0 +1,25 @@
+<!--pages/my/productInventory/productInventory.wxml-->
+<view class='container'>
+  <scroll-view scroll-y class='scroll-box'>
+    <view class='product-info-container bg-color-f flex-c mg-t-20' wx:for="{{10}}">
+      <view class='info-t flex-r'>
+        <image src='/imgs/productImg_03.png'></image>
+        <view class='detailInfo flex-c box-sizing'>
+          <text>仿真花</text>
+          <view class='flex-c'>
+            <text class='color-9'>租金：¥200元</text>
+            <view class='quantityMoey flex-r color-9'>
+              <view>押金：<text>¥200元</text></view>
+              <text>x1</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='info-b van-hairline--top'>
+        <!-- <i-button  type="success" shape="circle" size="small" inline i-class='btn'>小尺寸</i-button> -->
+        <van-button size="small"  class='btn' >退货退款</van-button>
+        <van-button size="small"  class='btn' >仅退款</van-button>
+      </view>
+    </view>
+  </scroll-view>
+</view>

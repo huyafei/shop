@@ -1,0 +1,26 @@
+<!--pages/my/index.wxml-->
+<view class='container my-container'>
+   <view class='my-info-content flex-r bg-color-3 mg-b-20'>
+    <view class='my-info-lf flex-r'>
+      <image src='/imgs/storeImg.png'></image>
+      <view class='my-name flex-c box-sizing'>
+          <text class='fz-32'>罗马婚庆（无锡鸿桥点）</text>
+          <text>15061509527</text>
+      </view>
+    </view>
+    <i-icon type="enter" size='16'/>
+  </view>
+  <i-cell-group class='cell-list-container' >
+    <i-cell title="我的订单" is-link i-class='item-cell flex-r' url='/pages/my/myOrder/myOrder'>
+      <i-icon  slot='icon' type="activity" size="20" />
+    </i-cell>
+    <i-cell title="我的租赁清单" is-link url='/pages/my/leaseOrder/leaseOrder'>
+      <i-icon slot='icon' type="createtask" size="20"/>
+    </i-cell>
+    <i-cell title="地址管理" is-link url='/pages/my/address/address'>
+      <i-icon slot='icon' type="coordinates" size="20" />
+    </i-cell>
+  </i-cell-group>
+
+
+</view>

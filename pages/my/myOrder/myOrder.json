@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的订单",
+  "usingComponents": {
+    "i-tabs": "/component/tabs/index",
+    "i-tab": "/component/tab/index",
+    "i-button": "/component/button/index",
+    "van-button": "/component/van-ui//button/index"
+  }
+}

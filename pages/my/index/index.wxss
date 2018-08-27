@@ -1,0 +1,33 @@
+/* pages/my/index.wxss */
+/* @import '/pages/index/merchant_store/merchant_store.wxss'; */
+page{
+  height: 100%;
+}
+.my-info-content{
+  justify-content: space-between;
+  align-items: center;
+  height: 264rpx;
+  color: #fff;
+  /* background-color:#373739; */
+  padding: 0 30rpx;
+}
+.my-info-lf>image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius:50%; 
+}
+.my-name{
+  width: calc(100% - 120rpx);
+  height: 120rpx;
+  padding: 0 30rpx;
+  justify-content: space-around;
+}
+/* .cell-list-container .item-cell {
+  align-items: center;
+} */
+.cell-list-container .item-cell image{
+  width: 32rpx;
+  height: 32rpx;
+  margin: auto 0;
+  /* vertical-align: middle; */
+}

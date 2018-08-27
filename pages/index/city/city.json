@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "选择城市",
+  "usingComponents": {
+    "i-row": "/component/row/index",
+    "i-col": "/component/col/index",
+    "i-panel": "/component/panel/index"
+  }
+}

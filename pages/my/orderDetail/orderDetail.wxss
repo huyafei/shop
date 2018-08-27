@@ -1,0 +1,36 @@
+/* pages/my/orderDetail/orderDetail.wxss */
+page{
+  height: 100%;
+}
+.address{
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20rpx 30rpx;
+}
+.address-info{
+   padding: 0 30rpx;
+   width: calc(100% - 28rpx);
+}
+.productImg-list{
+  height: 200rpx!important;
+  /* display: flex!important;
+  justify-content: flex-start;
+  line-height: 180rpx!important;
+  align-items: center!important; */
+  padding:20rpx 30rpx; 
+}
+.productImg-list image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 20rpx;
+}
+.btn-groups{
+  padding: 10px 30rpx;
+  text-align: right;
+}
+.btn-groups .btn{
+  margin-left: 20rpx;
+}
+.scroll-box{
+  height: calc(100% - 64px);
+}

@@ -1,0 +1,25 @@
+<!--pages/my/ leaseOrder/ leaseOrder.wxml-->
+<view class='container flex-c leaseOrder-container'>
+  <i-tabs current="{{ current }}" color="#f759ab" bindchange="handleChange">
+    <i-tab key="tab1" title="待归还"></i-tab>
+    <i-tab key="tab2" title="归还记录"></i-tab>
+  </i-tabs>
+  <view class='leaseOrder-list-container'>
+     <scroll-view scroll-y class="scroll-box" bindscrolltolower="getProductPage">  
+      <view wx:for="{{10}}" class='item-product-info flex-r box-sizing'>
+        <image src="/imgs/productImg_03.png"></image>
+        <view class='product-detail-info flex-c box-sizing'>
+          <view class='product-info-t flex-c'>
+            <text class='product-title'>红豆仿真花</text>
+            <text class='fz-12 desc'>文字描述：如果你无法....</text>
+            <view class='fz-12 measure color-9'>
+              <text class='cashPledge mg-rt'>押金：200元</text>
+              <text>月租量：2014单</text>
+            </view>
+          </view>
+          <text class="rentMoney color-r">租金：200元</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
